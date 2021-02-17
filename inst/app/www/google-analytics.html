@@ -1,0 +1,22 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78Y5RQNFQB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-78Y5RQNFQB');
+
+  ga('send', 'pageview');
+
+  $(document).on('shiny:inputchanged', function(event){
+    ga('send','event','input','updates',event.name,event.value);
+  })
+  $(document).on('change', 'select', function(e) {
+    ga('send', 'event', 'widget', 'select data', $(e.currentTarget).val());
+  });
+
+  $(document).on('click', 'button', function() {
+    ga('send', 'event', 'button', 'update plot');
+  });
+</script>
