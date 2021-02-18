@@ -8,3 +8,4 @@ $run_dev.*
 ^rsconnect$
 ^LICENSE\.md$
 .RData
+^\.github$
