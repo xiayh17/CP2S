@@ -1,5 +1,5 @@
-![R-CMD-check](https://github.com/xiayh17/CP2S/workflows/R-CMD-check/badge.svg)
 <!-- badges: start -->
+![R-CMD-check](https://github.com/xiayh17/CP2S/workflows/R-CMD-check/badge.svg)
 [![Travis build status](https://travis-ci.com/xiayh17/CP2S.svg?branch=master)](https://travis-ci.com/xiayh17/CP2S)
 <!-- badges: end -->
 
