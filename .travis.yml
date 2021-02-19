@@ -3,11 +3,14 @@
 language: R
 cache: packages
 
-language: r
+sudo: required
 
 r_packages:
   - covr
+  - devtools
+
+r_github_packages:
+  - xiayh17/CP2S
 
 after_success:
-  - Rscript -e 'library(covr); codecov()'
-  CODECOV_TOKEN='d705382d-da7b-4552-9d11-caa8151d1c54'
+  - Rscript -e 'library(covr);codecov()'
